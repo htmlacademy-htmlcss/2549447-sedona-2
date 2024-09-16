@@ -106,8 +106,10 @@
               </fieldset>
               <fieldset class="price-form">
                 <legend class="price-legeng">Стоимость, ₽:</legend>
-                <label class="visually-hidden">от <input type="number" name="price-min" placeholder="0" value="0"></label>
-                <label class="visually-hidden">до <input type="number" name="price-max" placeholder="9000" value="9000"></label>
+                <label class="visually-hidden" for="min-price">от</label>
+                <input type="number" id="min-price" name="price-min" placeholder="0" value="0">
+                <label class="visually-hidden" for="max-price">до</label>
+                <input type="number" id="max-price" name="price-max" placeholder="9000" value="9000">
               </fieldset>
               <div class="buttons-block">
                 <button class="button button-action" type="submit">Применить</button>
@@ -234,11 +236,11 @@
       <footer class="page-footer">
         <section class="footer-subscribe footer-subscribe-hotels">
           <h2 class="subscribe-header subscribe-header-hotels">Подпишитесь на рассылку</h2>
-          <p class="subscribe-text subscribe-text-hotels">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-text subscribe-text-hotels">Только полезная информация и никакого спама,<br> честное
+            бойскаутское!</p>
           <form class="subscribe-form subscribe-form-hotels" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden">Поделитесь с нами почтой
-              <input class="subscribe-e-mail" type="email" name="subscribe-e-mail" placeholder="Ваш e-mail">
-            </label>
+            <label class="visually-hidden" for="e-mail-subscribe">Поделитесь с нами почтой</label>
+            <input class="subscribe-e-mail" id="e-mail-subscribe" type="email" name="subscribe-e-mail" placeholder="Ваш e-mail">
             <button class="button submit-button" type="submit">Подписаться</button>
           </form>
         </section>
