@@ -333,12 +333,18 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .subscribe-text {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 54px;
 }
 
 .subscribe-form {
@@ -436,6 +442,7 @@ body {
 .breadcrumbs {
   color: #ffffff;
   list-style-type: none;
+  margin-left: 70px;
 }
 
 .characteristic-filter {
@@ -473,6 +480,8 @@ body {
 
 .fieldset-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .price-form {
@@ -491,6 +500,8 @@ body {
   font-family: inherit;
   background-color: #82b3d3;
   border: none;
+  margin: 0;
+  padding: 8px;
 }
 
 .hidden-back {
@@ -518,13 +529,29 @@ body {
 
 .hotels-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 340px);
   width: 1060px;
   margin: 0 auto;
   padding: 0;
   gap: 20px;
   list-style-type: none;
   margin-bottom: 80px;
+}
+
+.hotels-item-title {
+  margin: 0;
+  padding: 0;
+}
+
+.description-of-housing {
+  margin: 0;
+  padding: 0;
+}
+
+.price-of-housing {
+  margin: 0;
+  padding: 0;
+  justify-self: end;
 }
 
 .hotel-rating {
@@ -535,9 +562,9 @@ body {
   text-transform: uppercase;
   text-align: center;
   align-content: center;
-  width: 140px;
-  height: 34px;
   border-radius: 4px;
+  padding: 8px;
+  margin: 0;
 }
 
 .select-variants-title {
@@ -564,6 +591,8 @@ body {
 }
 
 .hotels-title-link {
+  grid-column: 1/-1;
+  grid-row: 2/3;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -572,9 +601,22 @@ body {
 }
 
 .hotels-item{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 212px auto 1fr 36px 36px;
+  gap: 16px 20px;
   box-shadow: 0 0 0 1px #e6e6e6;
   border-radius: 4px;
   padding: 20px;
+}
+
+.hotels-img-link {
+  grid-column: 1/-1;
+}
+
+.more-button {
+  padding: 8px;
+  margin: 0;
 }
 
 .selected-card-button {
