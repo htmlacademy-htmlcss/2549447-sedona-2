@@ -45,11 +45,12 @@
                     d="M8.9 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C.4 7.8 0 6.6 0 5.4 0 2.4 2.4 0 5.5 0 6.8 0 8 .5 9 1.3 10 .5 11.3 0 12.5 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
                 </svg>
                 <span class="visually-hidden">В избранное добавлено объектов: </span>
+                <span class="number-of-objects">12</span>
               </a>
-              <span class="number-of-objects">12</span>
+
             </li>
             <li class="navigation-user-item navigation-user-button">
-              <a class="button" href="#">Хочу сюда!</a>
+              <a class="button button-go" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -59,10 +60,18 @@
           <h1 class="page-filter-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
+              <a class="breadcrumbs-link" href="index.html">
+                <span class="visually-hidden">Главная</span>
+                <svg class="breadcrumbs-svg" aria-hidden="true" focusable="false" width="13" height="13"
+                  viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" />
+                  <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" />
+                </svg>
+              </a>
             </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link breadcrumbs-link-current"><span>Гостиницы</span></a>
+            <li class="breadcrumbs-item breadcrumbs-item-next">
+              <a class="breadcrumbs-link breadcrumbs-link-current"><span class="breadcrumbs-text">Гостиницы</span></a>
             </li>
           </ul>
           <section class="filter-list">
@@ -138,43 +147,43 @@
             </select>
             <ul class="card-display" aria-label="Отображение карточек отелей">
               <li class="card-item card-item-select">
-                <a class="card-item-display" href="#">
+                <a class="card-item-display">
                   <span class="visually-hidden">Плитки</span>
                   <svg class="card-item-svg" aria-hidden="true" focusable="false" width="16" height="14"
-                  viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 0H0V6H4V0Z" fill="black" />
-                  <path d="M16 0H12V6H16V0Z" fill="black" />
-                  <path d="M10 0H6V6H10V0Z" fill="black" />
-                  <path d="M4 8H0V14H4V8Z" fill="black" />
-                  <path d="M16 8H12V14H16V8Z" fill="black" />
-                  <path d="M10 8H6V14H10V8Z" fill="black" />
-                </svg>
+                    viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 0H0V6H4V0Z" fill="black" />
+                    <path d="M16 0H12V6H16V0Z" fill="black" />
+                    <path d="M10 0H6V6H10V0Z" fill="black" />
+                    <path d="M4 8H0V14H4V8Z" fill="black" />
+                    <path d="M16 8H12V14H16V8Z" fill="black" />
+                    <path d="M10 8H6V14H10V8Z" fill="black" />
+                  </svg>
                 </a>
               </li>
               <li class="card-item">
                 <a class="card-item-display" href="#">
                   <span class="visually-hidden">Карточки</span>
                   <svg class="card-item-svg" aria-hidden="true" focusable="false" width="16" height="14"
-                  viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16 12H0V14H16V12Z" fill="black" />
-                  <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
-                </svg>
+                    viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 12H0V14H16V12Z" fill="black" />
+                    <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
+                  </svg>
                 </a>
               </li>
               <li class="card-item">
                 <a class="card-item-display" href="#">
                   <span class="visually-hidden">Список</span>
                   <svg class="card-item-svg" aria-hidden="true" focusable="false" width="16" height="14"
-                  viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 0H0V2H2V0Z" fill="black" />
-                  <path d="M16 0H4V2H16V0Z" fill="black" />
-                  <path d="M2 4H0V6H2V4Z" fill="black" />
-                  <path d="M16 4H4V6H16V4Z" fill="black" />
-                  <path d="M2 8H0V10H2V8Z" fill="black" />
-                  <path d="M16 8H4V10H16V8Z" fill="black" />
-                  <path d="M2 12H0V14H2V12Z" fill="black" />
-                  <path d="M16 12H4V14H16V12Z" fill="black" />
-                </svg>
+                    viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 0H0V2H2V0Z" fill="black" />
+                    <path d="M16 0H4V2H16V0Z" fill="black" />
+                    <path d="M2 4H0V6H2V4Z" fill="black" />
+                    <path d="M16 4H4V6H16V4Z" fill="black" />
+                    <path d="M2 8H0V10H2V8Z" fill="black" />
+                    <path d="M16 8H4V10H16V8Z" fill="black" />
+                    <path d="M2 12H0V14H2V12Z" fill="black" />
+                    <path d="M16 12H4V14H16V12Z" fill="black" />
+                  </svg>
                 </a>
               </li>
             </ul>
