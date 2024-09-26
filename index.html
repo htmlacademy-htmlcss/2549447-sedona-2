@@ -28,7 +28,7 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-user-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-user-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20"
                   viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -38,7 +38,7 @@
               </a>
             </li>
             <li class="navigation-user-like navigation-user-like-accent">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-user-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="17"
                   viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -97,7 +97,7 @@
             </li>
             <li class="advantages-item-img">
               <div class="advantages-text-container">
-                <h3 class="advantages-title">Там есть мост дьявола</h3>
+                <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
                 <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
               <img class="advantages-card" src="images/devils_bridge.jpg" width="800" height="385"
@@ -113,15 +113,16 @@
           <ul class="service-list">
             <li class="service-item">
               <h3 class="service-title service-title-home">Жильё</h3>
-              <p class="service-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="service-item-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="service-item">
               <h3 class="service-title service-title-food">Еда</h3>
-              <p class="service-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="service-item-description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!
+              </p>
             </li>
             <li class="service-item">
               <h3 class="service-title service-title-souvenir">Сувениры</h3>
-              <p class="service-item-description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="service-item-description">Не только китайского,<br> но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -224,6 +225,65 @@
           </div>
         </section>
       </footer>
+    </div>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
+            <div class="form-group form-group-full">
+              <label class="modal-form-label" for="arrival-date">Дата Заезда:</label>
+              <input class="modal-form-input date-input" type="text" id="arrival-date" name="arrival-date"
+                value="27 апреля 2020" placeholder="Укажите дату" required>
+              <p class="form-status form-status-error">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="form-group form-group-full">
+              <label class="modal-form-label" for="departure-date">Дата Выезда:</label>
+              <input class="modal-form-input date-input" type="text" id="departure-date" name="departure-date"
+                value="1 сентября 2023" placeholder="Укажите дату" required>
+              <p class="form-status">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="form-group">
+              <label class="modal-form-label" for="quantity-adults">Взрослые:</label>
+              <div class="quantity-container">
+                <button class="quantity-button quantity-button-minus" type="button">
+                  <span class="visually-hidden">Меньше</span>
+                </button>
+                <input class="quantity-input" type="number" id="quantity-adults" name="quantity-adults" value="2"
+                  placeholder="2">
+                <button class="quantity-button quantity-button-plus" type="button">
+                  <span class="visually-hidden">Больше</span>
+                </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="group-children">
+                <label class="modal-form-label label-children" for="quantity-children">&nbsp;Дети:</label>
+                <button class="form-tooltip" type="button" aria-labelledby="tooltip-label-date">
+                  <span class="visually-hidden">Дополнительная информция</span>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                  будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </div>
+              <div class="quantity-container">
+                <button class="quantity-button quantity-button-minus" type="button">
+                  <span class="visually-hidden">Меньше</span>
+                </button>
+                <input class="quantity-input" type="number" id="quantity-children" name="quantity-children" value="2"
+                  placeholder="2">
+                <button class="quantity-button quantity-button-plus" type="button">
+                  <span class="visually-hidden">Больше</span>
+                </button>
+              </div>
+            </div>
+            <button class="button-modal button-action" type="submit">Найти</button>
+          </form>
+        </section>
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
     </div>
   </body>
 
