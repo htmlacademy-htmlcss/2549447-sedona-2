@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Олег Сулицкий](https://up.htmlacademy.ru/htmlcss-individual/2/user/2549447).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Мой проект Седона](https://olegsulitskii.github.io/2549447-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
