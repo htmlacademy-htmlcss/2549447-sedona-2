@@ -611,6 +611,10 @@ body {
   cursor: pointer;
 }
 
+.subscribe-e-mail::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .subscribe-e-mail:hover {
   background-color: #E6E6E6;
 }
@@ -809,6 +813,10 @@ body {
   background-color: #e6e6e6;
 }
 
+.modal-form-input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .modal-close-button:active {
   background-color: #e6e6e6;
 }
@@ -935,6 +943,10 @@ body {
   margin: 0;
   -webkit-appearance: none;
   appearance: none;
+}
+
+.quantity-input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .quantity-button-plus {
@@ -1242,6 +1254,10 @@ body {
   outline: none;
   -webkit-appearance: textfield;
   appearance: textfield;
+}
+
+.fixing-price::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .filter-price:hover {
