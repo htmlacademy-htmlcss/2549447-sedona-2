@@ -1389,6 +1389,10 @@ body {
   border: none;
 }
 
+.hotels-variants {
+  padding-bottom: 60px;
+}
+
 .hotels-variants-row {
   display: flex;
   flex-wrap: wrap;
