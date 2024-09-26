@@ -57,6 +57,7 @@ body {
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 1060px;
   margin: 0 auto;
@@ -282,6 +283,19 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+
+.number-of-objects:hover {
+  background-color: #6C9E42;
+}
+
+.number-of-objects:focus-visible {
+  background-color: #6C9E42;
+}
+
+.number-of-objects:active {
+  background-color: #7DB54F;
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .intro {
@@ -572,6 +586,7 @@ body {
 
 .subscribe-form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   max-width: 684px;
   margin: 0 auto;
@@ -590,6 +605,19 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.subscribe-e-mail:hover {
+  background-color: #E6E6E6;
+}
+
+.subscribe-e-mail:focus-visible {
+  background-color: #E6E6E6;
+}
+
+.subscribe-e-mail:active {
+  background-color: #E6E6E6;
 }
 
 .subscribe-form .submit-button {
@@ -606,6 +634,7 @@ body {
 
 .footer-links-container {
   display: flex;
+  flex-wrap: wrap;
   width: 1060px;
   min-height: 120px;
   margin: 0 auto;
@@ -673,6 +702,7 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -763,11 +793,12 @@ body {
 
 .breadcrumbs-item-next {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
 }
 
-.breadcrumbs-item-next::before{
+.breadcrumbs-item-next::before {
   content: " ";
   background-image: url(../images/ikons_logos/next.svg);
   display: block;
@@ -780,6 +811,7 @@ body {
 
 .characteristic-filter {
   display: flex;
+  flex-wrap: wrap;
   width: 1060px;
   margin: 0 auto;
   padding: 0;
@@ -846,6 +878,7 @@ body {
 
 .hotels-variants-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 1060px;
   margin: 0 auto;
@@ -855,11 +888,53 @@ body {
 
 .card-display {
   display: flex;
+  flex-wrap: wrap;
   min-width: 160px;
   padding: 0;
   margin: 0;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.card-item-display {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #000000;
+  border: #E5E5E5 solid 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-item-display.card-item-select {
+  border: #000000 solid 2px;
+}
+
+.card-table {
+  background-image: url(../images/ikons_logos/table.svg);
+}
+
+.card-slideshow {
+  background-image: url(../images/ikons_logos/slideshow.svg);
+}
+
+.card-list {
+  background-image: url(../images/ikons_logos/list.svg);
+}
+
+.card-item-display:hover {
+  border: #000000 solid 2px;
+}
+
+.card-item-display:focus-visible {
+  border: #000000 solid 2px;
+}
+
+.card-item-display:active {
+  border: #000000 solid 2px;
 }
 
 .hotels-cards {
@@ -922,11 +997,16 @@ body {
   margin-left: auto;
   padding-left: 20px;
   padding-right: 20px;
-  width: 292px;
+  min-width: 292px;
   height: 48px;
   cursor: pointer;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  appearance: none;
+  background-image: url(../images/ikons_logos/down.svg);
+  background-repeat: no-repeat;
+  background-position: right 18px top 19px;
+  background-size: 12px 7px;
 }
 
 .select-variants:hover {
@@ -965,6 +1045,9 @@ body {
 
 .hotels-img-link {
   grid-column: 1/-1;
+}
+
+.hotels-item-img {
   object-fit: cover;
 }
 
@@ -975,6 +1058,30 @@ body {
 
 .selected-card-button {
   background-color: #7db54f;
+}
+
+.stars {
+  display: block;
+  margin: 0;
+  min-height: 18px;
+  background-image: url(../images/ikons_logos/stars.svg);
+  background-repeat: no-repeat;
+}
+
+.one-star {
+  background-position: -96px;
+}
+
+.two-stars {
+  background-position: -72px;
+}
+
+.three-stars {
+  background-position: -48px;
+}
+
+.four-stars {
+  background-position: -24px;
 }
 
 .pagination-list {
@@ -1018,6 +1125,7 @@ body {
 
 .advantages .advantages-list .advantages-item-img {
   display: flex;
+  flex-wrap: wrap;
   background-color: #82b3d3;
   color: #ffffff;
   min-width: 100%;
@@ -1035,35 +1143,6 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-
-
 .service-list li:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
-}
-
-.card-item {
-  border: 2px solid #e5e5e5;
-  border-radius: 4px;
-  width: 48px;
-  height: 48px;
-  box-sizing: border-box;
-}
-
-.card-item-select {
-  border: 2px solid #000000;
-  box-sizing: border-box;
-}
-
-.card-item:hover {
-  border: 2px solid #000000;
-  box-sizing: border-box;
-}
-
-.card-item:active {
-  border: 2px solid #000000;
-  box-sizing: border-box;
-}
-
-.card-item-svg {
-  padding: 15px 14px;
 }

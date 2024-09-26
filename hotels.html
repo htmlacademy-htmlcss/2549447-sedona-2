@@ -125,10 +125,10 @@
               </fieldset>
               <fieldset class="price-form">
                 <legend class="price-legeng">Стоимость, ₽:</legend>
-                <label class="visually-hidden" for="min-price">от</label>
-                <input type="number" id="min-price" name="price-min" placeholder="0" value="0">
-                <label class="visually-hidden" for="max-price">до</label>
-                <input type="number" id="max-price" name="price-max" placeholder="9000" value="9000">
+                <label for="min-price">от</label>
+                <input type="number" id="min-price" name="price-min" placeholder="0" value="0" required>
+                <label for="max-price">до</label>
+                <input type="number" id="max-price" name="price-max" placeholder="9000" value="9000" required>
               </fieldset>
               <div class="buttons-block">
                 <button class="button button-action" type="submit">Применить</button>
@@ -146,45 +146,20 @@
               <option value="popular">Сначала популярные</option>
             </select>
             <ul class="card-display" aria-label="Отображение карточек отелей">
-              <li class="card-item card-item-select">
-                <a class="card-item-display">
+              <li class="card-item">
+                <button class="card-item-display card-table card-item-select" type="button">
                   <span class="visually-hidden">Плитки</span>
-                  <svg class="card-item-svg" aria-hidden="true" focusable="false" width="16" height="14"
-                    viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 0H0V6H4V0Z" fill="black" />
-                    <path d="M16 0H12V6H16V0Z" fill="black" />
-                    <path d="M10 0H6V6H10V0Z" fill="black" />
-                    <path d="M4 8H0V14H4V8Z" fill="black" />
-                    <path d="M16 8H12V14H16V8Z" fill="black" />
-                    <path d="M10 8H6V14H10V8Z" fill="black" />
-                  </svg>
-                </a>
+                </button>
               </li>
               <li class="card-item">
-                <a class="card-item-display" href="#">
+                <button class="card-item-display card-slideshow" type="button">
                   <span class="visually-hidden">Карточки</span>
-                  <svg class="card-item-svg" aria-hidden="true" focusable="false" width="16" height="14"
-                    viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 12H0V14H16V12Z" fill="black" />
-                    <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
-                  </svg>
-                </a>
+                </button>
               </li>
               <li class="card-item">
-                <a class="card-item-display" href="#">
+                <button class="card-item-display card-list" type="button">
                   <span class="visually-hidden">Список</span>
-                  <svg class="card-item-svg" aria-hidden="true" focusable="false" width="16" height="14"
-                    viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 0H0V2H2V0Z" fill="black" />
-                    <path d="M16 0H4V2H16V0Z" fill="black" />
-                    <path d="M2 4H0V6H2V4Z" fill="black" />
-                    <path d="M16 4H4V6H16V4Z" fill="black" />
-                    <path d="M2 8H0V10H2V8Z" fill="black" />
-                    <path d="M16 8H4V10H16V8Z" fill="black" />
-                    <path d="M2 12H0V14H2V12Z" fill="black" />
-                    <path d="M16 12H4V14H16V12Z" fill="black" />
-                  </svg>
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -235,7 +210,7 @@
               <p class="price-of-housing">От 2500 ₽</p>
               <a class="more-button button" href="#">Подробнее</a>
               <button class="button button-action select-card-button">В избранное</button>
-              <p class="stars four-stars">
+              <p class="stars three-stars">
                 <span class="visually-hidden">3 звезды</span>
               </p>
               <p class="hotel-rating">Рейтинг: 6,9</p>
@@ -252,7 +227,7 @@
               <p class="price-of-housing">От 1500 ₽</p>
               <a class="more-button button" href="#">Подробнее</a>
               <button class="button button-action select-card-button">В избранное</button>
-              <p class="stars four-stars">
+              <p class="stars two-stars">
                 <span class="visually-hidden">2 звезды</span>
               </p>
               <p class="hotel-rating">Рейтинг: 5,0</p>
@@ -293,7 +268,7 @@
           <form class="subscribe-form subscribe-form-hotels" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="e-mail-subscribe">Поделитесь с нами почтой</label>
             <input class="subscribe-e-mail" id="e-mail-subscribe" type="email" name="subscribe-e-mail"
-              placeholder="Ваш e-mail">
+              placeholder="Ваш e-mail" required>
             <button class="button submit-button" type="submit">Подписаться</button>
           </form>
         </section>
