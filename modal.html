@@ -5,12 +5,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" type="png" href="images/ikons_logos/favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
     <div class="body-content">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" aria-current="page" href="index.html">
             <img class="logo" src="images/ikons_logos/sedona.svg" width="140" height="70"
@@ -56,15 +57,15 @@
           </ul>
         </nav>
       </header>
-      <main class="main-index">
-        <section class="intro">
+      <main class="main-index" data-test="main">
+        <section class="intro" data-test="hero">
           <div class="intro-text-container">
             <h1 class="visually-hidden">Седона</h1>
             <img class="intro-text" src="images/ikons_logos/welcome.svg" width="458" height="352" lang="en"
               alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
           </div>
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <div class="advantages-heading-container">
             <h2 class="advantages-heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -106,7 +107,7 @@
             </li>
           </ul>
         </section>
-        <section class="service">
+        <section class="service" data-test="service">
           <div class="service-text-container">
             <h2 class="service-heading">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
             <p class="service-text">Опытный персонал и качественное обслуживание!</p>
@@ -127,7 +128,7 @@
             </li>
           </ul>
         </section>
-        <section class="search">
+        <section class="search" data-test="search">
           <div class="search-content">
             <h2 class="search-heading">Заинтересовались?</h2>
             <p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
@@ -137,7 +138,7 @@
         </section>
       </main>
       <footer class="page-footer">
-        <section class="footer-subscribe">
+        <section class="footer-subscribe" data-test="subscribe">
           <div class="subscribe-text-container">
             <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
             <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -149,7 +150,7 @@
             <button class="button submit-button" type="submit">Подписаться</button>
           </form>
         </section>
-        <section class="footer-links">
+        <section class="footer-links" data-test="footer">
           <h2 class="visually-hidden">Полезные ссылки и контакты</h2>
           <div class="footer-links-container">
             <section class="footer-social">
@@ -228,7 +229,7 @@
       </footer>
     </div>
 
-    <div class="modal-container" data-test="modal">
+    <div class="modal-container">
       <div class="modal modal-auth">
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -281,7 +282,7 @@
             <button class="button-modal button-action" type="submit">Найти</button>
           </form>
         </section>
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
       </div>
